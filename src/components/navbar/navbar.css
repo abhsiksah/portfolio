@@ -1,0 +1,42 @@
+.Navbar {
+  width: 100%;
+  background-color: rgb(255, 250, 250);
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+
+  /* justify-content: space-between; */
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 10px;
+  color: black;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .Navbar {
+    background-color: rgba(0, 0, 0, 0.116);
+    width: 100vw;
+  }
+  .right {
+    display: none;
+  }
+}

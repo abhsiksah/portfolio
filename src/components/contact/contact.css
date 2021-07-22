@@ -1,0 +1,68 @@
+.contact {
+  background-image: url("https://res.cloudinary.com/mantiscloud/image/upload/v1626870625/Capture_bdjrvj.png");
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.left23 {
+  flex: 1;
+  overflow: hidden;
+}
+
+.right23 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 300px;
+  height: 200px;
+  font-size: 14px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
+  .right23 {
+    position: relative;
+    right: 25px;
+  }
+  input {
+    width: 200px;
+  }
+  textarea {
+    width: 150px;
+  }
+}

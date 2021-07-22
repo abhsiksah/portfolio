@@ -1,0 +1,176 @@
+.Portfolio {
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("https://res.cloudinary.com/mantiscloud/image/upload/v1626632444/wp6784639_kaadwg.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.arrowleft {
+  position: relative;
+  right: 35rem;
+}
+
+.arrowright {
+  position: relative;
+  left: 35rem;
+}
+
+.slider {
+  height: 500px;
+  transition: all 1s ease-out;
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 700px;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left1 {
+  flex: 4;
+  /* background-color: black; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px 0 rgba(63, 40, 40, 2);
+}
+
+.right1 {
+  flex: 8;
+  /* background-color: rgb(131, 59, 59); */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftcontainer {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.imgcontainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(245, 179, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.5rem;
+}
+.projectview {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  /* font-weight: 600; */
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px 0 rgba(63, 40, 40, 2);
+}
+.right1 {
+  flex: 8;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  box-shadow: 0 0 30px 0 rgba(63, 40, 40, 2);
+  border-radius: 20%;
+}
+
+img:hover {
+  transform: scale(2, 3);
+  transition: 1s;
+}
+
+@media screen and (max-width: 480px) {
+  .slider {
+    height: 250px;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+  .right1 {
+    height: 50vh;
+    width: 100vw;
+  }
+  .left1 {
+    background-image: url();
+    box-shadow: none;
+  }
+  .leftcontainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .projectview {
+    box-shadow: none;
+    padding-left: 15px;
+  }
+  img {
+    box-shadow: 0 0 3px 0 rgba(63, 40, 40, 2);
+  }
+  .imgcontainer {
+    display: none;
+  }
+
+  .arrowleft {
+    position: relative;
+    right: 1rem;
+    top: 13rem;
+  }
+
+  .arrowright {
+    position: relative;
+    left: 1rem;
+    top: 13rem;
+  }
+}

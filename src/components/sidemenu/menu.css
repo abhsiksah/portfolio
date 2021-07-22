@@ -1,0 +1,43 @@
+.Menu {
+  width: 300px;
+  height: 100vh;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 1s;
+}
+
+.active {
+  right: -300px !important;
+
+  background-color: rgb(56, 53, 49);
+}
+
+ul {
+  list-style: none;
+}
+li {
+  padding-bottom: 20px;
+}
+ul a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+ul a:hover {
+  font-size: 2.2rem;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+  .Menu {
+    display: none;
+  }
+}
