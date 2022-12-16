@@ -13,10 +13,10 @@ const Portfolio = () => {
   const data = [
     {
       id: "1",
-      url: "https://demoapp1523.herokuapp.com/login",
+      url: "https://social-index.onrender.com/",
       title: "Full stack Social media App",
       desc: "This is a Full-stack app that I have created using MERN and deployed on Heroku. Here the user can log in create a post like and comment on the posts, you can also see every user's profile that is available on the Home page. ",
-      img: "https://res.cloudinary.com/mantiscloud/image/upload/v1626636919/Capture_zd6kbt.png",
+      img: "https://res.cloudinary.com/mantiscloud/image/upload/v1671183443/Screenshot_2022-12-16_150626_ds2moi.png",
     },
     {
       id: "2",
@@ -34,13 +34,6 @@ const Portfolio = () => {
     },
     {
       id: "4",
-      url: "https://abhsiksah.github.io/wildfire-Tracker/",
-      title: "Wildfire-Tracker",
-      desc: "his project renders a map that shows all the locations of live wildfire across the world. I have used NASA Open APIs for the coordinates of all the live wildfire and the google-map-react library for rendering the map.",
-      img: "https://res.cloudinary.com/mantiscloud/image/upload/v1626867804/Capture_y8l5qf.png",
-    },
-    {
-      id: "5",
       url: "https://crytotrackerreact.netlify.app/",
       title: "Crypto-Tracker",
       desc: "The purpose of this project was to show all the possible cryptocurrencies important information on a page where you can search your desired crypto-coins information",
@@ -50,7 +43,7 @@ const Portfolio = () => {
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length - 1)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
 
