@@ -26,7 +26,7 @@ const About = () => {
             I am a{" "}
             <Typical
               steps={[
-                "Application-Developer💻",
+                "Creative Person 💯",
                 1000,
                 "Web-Designer🧑‍🎨",
                 2000,
