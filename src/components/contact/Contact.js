@@ -7,9 +7,9 @@ const Contact = () => {
     setMessage(true);
   };
   return (
-    <div data-aos="flip-up" className="contact" id="contact">
-      <div data-aos="fade-up-right" className="left23"></div>
-      <div data-aos="fade-up-left" className="right23">
+    <div className="contact" id="contact">
+      <div className="left23"></div>
+      <div className="right23">
         <h2 data-aos="flip-left">Contact.</h2>
         <form onSubmit={handleSubmit}>
           <input data-aos="fade-down-left" type="text" placeholder="Email" />

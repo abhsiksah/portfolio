@@ -34,10 +34,10 @@ const Portfolio = () => {
     },
     {
       id: "4",
-      url: "https://crytotrackerreact.netlify.app/",
-      title: "Crypto-Tracker",
-      desc: "The purpose of this project was to show all the possible cryptocurrencies important information on a page where you can search your desired crypto-coins information",
-      img: "https://res.cloudinary.com/mantiscloud/image/upload/v1626635548/Capture1_zkgx1v.png",
+      url: "https://bejewelled-caramel-0c49d4.netlify.app/",
+      title: "You-Tube CLone",
+      desc: "The purpose of this project was to create Youtube like application.",
+      img: "https://res.cloudinary.com/mantiscloud/image/upload/v1671188044/Screenshot_2022-12-16_162333_amjcmk.png",
     },
   ];
 
@@ -48,7 +48,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div data-aos="fade-up-right" className="Portfolio" id="portfolio">
+    <div className="Portfolio" id="portfolio">
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

@@ -27,7 +27,6 @@
   flex: 0.5;
   margin: 0;
   display: flex;
-  padding: 2rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -35,7 +34,6 @@
 
 .bot {
   flex: 0.5;
-
   margin: 0;
   display: flex;
   padding: 3rem;
@@ -82,17 +80,34 @@
   .About {
     flex-direction: column;
   }
+
   .scrollDown {
     display: none;
   }
+
   .img {
     height: 15rem;
     width: 15rem;
   }
+
   .heading {
     font-size: 10px;
   }
+
   .textbox {
     font-size: 20px;
+  }
+
+  .bot {
+    flex: 0.5;
+    margin-bottom: 100px !important;
+    display: flex;
+    padding: 3rem;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* border: 4px black solid; */
   }
 }
